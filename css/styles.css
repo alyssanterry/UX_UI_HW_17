@@ -1,0 +1,187 @@
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #723885;
+}
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: #234078;
+    flex-shrink: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: #234078;
+    color: white;
+    flex-shrink: 1;
+}
+h2:hover {
+    text-decoration: underline solid #F2D533;
+    cursor: pointer;
+}
+.logoName {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 1;
+}
+.logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    float: left;
+    padding-left: 30px;
+}
+.name {
+    color: white;
+    align-items: left;
+    padding-left: 30px;
+}
+
+
+.introduction {
+    display: flex;
+    color: white;
+    background-color:  #299798;
+    width: 100%;
+    height: 400px;
+    padding-top: 100px;
+}
+.introLeft {
+    padding-right: 50px;
+    width: 50%;
+}
+.introRight {
+   width: 50%;
+}
+.introText {
+    padding-left: 100px;
+}
+.introIcons {
+    display: flex;
+    justify-content: flex-end;
+}
+.introIcons:hover {
+    cursor: pointer;
+}
+.iconLinkedin:hover {
+    transform: scale(1.2, 1.2);
+}
+.iconEmail:hover {
+    transform: scale(1.2, 1.2);
+}
+
+
+.myWork {
+    display: grid;
+    justify-content: space-around;
+    align-items: start;
+    width: 100%;
+    grid-template-columns: 380px 380px;
+    grid-template-rows: 100px 550px 550px;
+    grid-template-areas:
+    "pageTitle pageTitle"
+    "project1 project2"
+    "project3 project4"
+}
+.pageTitle {
+    color: #723885;
+    grid-area: pageTitle;
+    justify-self: center;
+}
+.project1 {
+    grid-area: project1;
+}
+.project2 {
+    grid-area: project2;
+}
+.project3 {
+    grid-area: project3;
+}
+.project2 {
+    grid-area: project4;
+}
+.projectImage:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+
+.footer {
+    display: grid;
+    width: 100%;
+    color: white;
+    background-color: #234078;
+    grid-template-columns: 608px 832px;
+    grid-template-rows: 100x 100px 100px;
+    padding-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+    "nothing footerTitle"
+    "iconLinkedin descriptionLinkedin"
+    "iconEmail descriptionEmail"
+}
+.nothing {
+    grid-area: nothing;
+}
+.footerTitle {
+    grid-area: footerTitle;
+    justify-self: flex-start;
+    text-decoration: underline solid #F2D533;
+}
+.iconLinkedin {
+    grid-area: iconLinkedin;
+    justify-self: flex-end;
+    padding-right: 10px;
+}
+.descriptionLinkedin {
+    grid-area: descriptionLinkedin;
+    justify-self: flex-start;
+}
+.iconEmail {
+    grid-area: iconEmail;
+    justify-self: flex-end;
+    padding-right: 10px;
+}
+.descriptionEmail {
+    grid-area: descriptionEmail;
+    justify-self: flex-start;
+}
